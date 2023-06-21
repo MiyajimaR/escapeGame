@@ -6,7 +6,6 @@ using UtageExtensions;
  
 public class AdvEngineController : MonoBehaviour
 {
-    [SerializeField]private bool inRPG = false;
     [SerializeField]private ResumeScript resumeScript;
     private bool init = false;
 
@@ -115,17 +114,11 @@ public class AdvEngineController : MonoBehaviour
     {
         if (!advEngine.Param.IsInit || init) return;
         
-        if(inRPG) //RPGシーンの初期化
-        {
 
-        }
-        else
-        {
-            init = true;
-            advEngine.Param.SetParameterInt("eduParam",resumeScript.eduSelect);
-            advEngine.Param.SetParameterInt("motiParam",resumeScript.motivaSelect);
-            advEngine.Param.SetParameterInt("reqParam",resumeScript.reqSelect);
-        }
+        init = true;
+        advEngine.Param.SetParameterInt("eduParam",resumeScript.eduSelect);
+        advEngine.Param.SetParameterInt("motiParam",resumeScript.motivaSelect);
+        advEngine.Param.SetParameterInt("reqParam",resumeScript.reqSelect);
             
         
     }
