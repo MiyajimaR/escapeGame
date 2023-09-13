@@ -6,15 +6,11 @@ public class GameManager : MonoBehaviour
 {
     //今持っているアイテム
     public static int[] ItemManager = new int[5]{-1,-1,-1,-1,-1};
-    public static int[] ItemQuantity = new int[5]{0,0,0,0,0};
     
 
     //入手済みのアイテム判定
     public static bool[] GotItemManager = new bool[30];  //とりあえず初期化、あとで増やして29をスパナの2本目にしている
 
-
-    //オブジェクトの変化
-    public static bool DropArea6_LivingWood = false;
 
 
 

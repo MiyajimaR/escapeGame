@@ -12,6 +12,7 @@ public class ImageChange : MonoBehaviour
     private Sprite DefaultSprite;
 
     [SerializeField]private bool ItemIn = false;
+    [SerializeField]private bool lockSprite = false;
 
     private inImageChange inImage;
 
@@ -28,6 +29,16 @@ public class ImageChange : MonoBehaviour
 
     public void ChangeImage()
     {
+        if(lockSprite)
+        {
+            if(image.sprite != ChangeSprite)
+            {
+                image.sprite = ChangeSprite;
+            }
+            return;
+        }
+
+
         if(!changeImage)
         {
             image.sprite = ChangeSprite;
@@ -48,7 +59,5 @@ public class ImageChange : MonoBehaviour
                 inImage.inImageChangeMethod(false);
             }
         }
-
-        
     }
 }

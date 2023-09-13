@@ -9,7 +9,6 @@ public class transition : MonoBehaviour
     private const int Hol = -3000;
     private const int Ver = -4000;
     private RectTransform rect;
-    [SerializeField]private GameObject alphaPanel;
     [SerializeField]private DirectionData directionData;
 
     [HideInInspector]public int nowXPos = 0;
@@ -23,7 +22,6 @@ public class transition : MonoBehaviour
     {
         rect = GetComponent<RectTransform>();
         nowTransition();
-        
     }
     public void xTransitionButton(int horizontal)
     {
@@ -63,7 +61,6 @@ public class transition : MonoBehaviour
     private IEnumerator cannotMove(int dir) //1,right   2, left   3,up   4,down
     {
         nowShake = true;
-        alphaPanel.SetActive(true);
 
         float oldPos = rect.anchoredPosition.x;
         float YoldPos = rect.anchoredPosition.y;
@@ -118,7 +115,6 @@ public class transition : MonoBehaviour
 
         rect.anchoredPosition = new Vector2(oldPos,YoldPos);
 
-        alphaPanel.SetActive(false);
         nowShake = false;
     }
     private bool FlickIntBool()
@@ -127,7 +123,9 @@ public class transition : MonoBehaviour
         {
             if(!directionData.canDirectionList[nowNumber].canRight)
             {
-                StartCoroutine("cannotMove",1);
+                if(!nowShake)
+                    StartCoroutine("cannotMove",1);
+               
                 return false;
             }    
         }
@@ -135,7 +133,8 @@ public class transition : MonoBehaviour
         {
             if(!directionData.canDirectionList[nowNumber].canLeft)
             {
-                StartCoroutine("cannotMove",2);
+                if(!nowShake)
+                    StartCoroutine("cannotMove",2);
                 return false;
             }    
         }
@@ -143,7 +142,8 @@ public class transition : MonoBehaviour
         {
             if(!directionData.canDirectionList[nowNumber].canUp)
             {
-                StartCoroutine("cannotMove",3);
+                if(!nowShake)
+                    StartCoroutine("cannotMove",3);
                 return false;
             }   
         }
@@ -151,11 +151,11 @@ public class transition : MonoBehaviour
         {
             if(!directionData.canDirectionList[nowNumber].canDown)
             {
-                StartCoroutine("cannotMove",4);
+                if(!nowShake)
+                    StartCoroutine("cannotMove",4);
                 return false;
             } 
         }
-
         return true;
     }
 

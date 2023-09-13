@@ -6,11 +6,6 @@ using UtageExtensions;
  
 public class AdvEngineController : MonoBehaviour
 {
-    [SerializeField]private bool inRPG = false;
-    [SerializeField]private ResumeScript resumeScript;
-    private bool init = false;
-
-
     // ADVエンジン
     public AdvEngine AdvEngine { get { return advEngine; } }
     [SerializeField]
@@ -109,32 +104,6 @@ public class AdvEngineController : MonoBehaviour
         advEngine.Param.SetParameterString("GetItemParam",StringParam);
     }
 
-                
-
-    private void Update()//オートセーブの初期化、それぞれ使用しているスクリプトでのセーブ有効化が必要
-    {
-        if (!advEngine.Param.IsInit || init) return;
-        
-        if(inRPG) //RPGシーンの初期化
-        {
-
-        }
-        else
-        {
-            init = true;
-            advEngine.Param.SetParameterInt("eduParam",resumeScript.eduSelect);
-            advEngine.Param.SetParameterInt("motiParam",resumeScript.motivaSelect);
-            advEngine.Param.SetParameterInt("reqParam",resumeScript.reqSelect);
-        }
-            
-        
-    }
-    public void OnSelectParamInEscape()  //選択肢のたび更新される
-    {
-        resumeScript.eduSelect = advEngine.Param.GetParameterInt("eduParam");
-        resumeScript.motivaSelect = advEngine.Param.GetParameterInt("motiParam");
-        resumeScript.reqSelect = advEngine.Param.GetParameterInt("reqParam");
-    }
 }
 
     /*private void UtageParameterControll() //engineはAdvEngineのこと

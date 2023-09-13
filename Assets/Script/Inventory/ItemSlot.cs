@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-[RequireComponent(typeof(DropArea))]
-public class ItemSlot : MonoBehaviour
+public class ItemSlot : DropArea
 {
     [HideInInspector]public bool nowItem = false;
     public int SlotID;
@@ -17,25 +16,15 @@ public class ItemSlot : MonoBehaviour
         dropArea = GetComponent<DropArea>();
     }
 
-    void Update()
-    {
-        if(dropArea.Dropped)
-        {
-            dropArea.Dropped = false;
-            ItemMethod();
-        }
-    }
-
-    private void ItemMethod()
+    protected override void dropMethod(int droppedItemID)
     {
         CancelInvoke("InitSlot");
-        int ItemNum = dropArea.DroppedItemID; //ドロップ元のアイテムID
 
         int destinationItemID = -1;
 
         for(int i = 0; i < 5; i++)
         {
-            if(GameManager.ItemManager[i] == ItemNum) //ドロップ元のアイテムスロットはinventory.itemslot[i]
+            if(GameManager.ItemManager[i] == droppedItemID) //ドロップ元のアイテムスロットはinventory.itemslot[i]
             {
                 inventory.itemSlot[i].nowItem = nowItem;
                 nowItem = true;
@@ -43,32 +32,7 @@ public class ItemSlot : MonoBehaviour
                 //GameManagerのアイテムIDの管理を交換する
                 destinationItemID = GameManager.ItemManager[SlotID];
                 GameManager.ItemManager[i] = destinationItemID;
-                GameManager.ItemManager[SlotID] = ItemNum;
-
-                destinationItemID = GameManager.ItemQuantity[SlotID];
-                GameManager.ItemQuantity[SlotID] = GameManager.ItemQuantity[i];
-                GameManager.ItemQuantity[i] = destinationItemID;
-
-                inventory.itemSlotNumber[i].text = GameManager.ItemQuantity[i].ToString();
-                inventory.itemSlotNumber[SlotID].text = GameManager.ItemQuantity[SlotID].ToString();
-
-                if(GameManager.ItemQuantity[i] < 2)
-                {
-                    inventory.itemSlotNumber[i].gameObject.SetActive(false);
-                }
-                else if(GameManager.ItemQuantity[i] > 1)
-                {
-                    inventory.itemSlotNumber[i].gameObject.SetActive(true);
-                }
-
-                if(GameManager.ItemQuantity[SlotID] < 2)
-                {
-                    inventory.itemSlotNumber[SlotID].gameObject.SetActive(false);
-                }
-                else if(GameManager.ItemQuantity[SlotID] > 1)
-                {
-                    inventory.itemSlotNumber[SlotID].gameObject.SetActive(true);
-                }
+                GameManager.ItemManager[SlotID] = droppedItemID;
 
                 Destroy(inventory.ItemSlotChild[i]);
                 inventory.ItemSlotChild[i] = null;
@@ -130,13 +94,6 @@ public class ItemSlot : MonoBehaviour
                 inventory.itemSlot[i].nowItem = true;
                 GameObject ItemObj = inventory.itemDataManager.ItemDataList[GameManager.ItemManager[i]].ObjPrefab;
 
-                inventory.itemSlotNumber[i].text = GameManager.ItemQuantity[i].ToString();
-
-                if(GameManager.ItemQuantity[i] < 2)
-                {
-                    inventory.itemSlotNumber[i].gameObject.SetActive(false);
-                }
-
                 Transform parent = inventory.itemSlot[i].transform;
                 inventory.ItemSlotChild[i] = Instantiate(ItemObj,inventory.itemSlot[i].transform.position,Quaternion.identity,parent);
                 inventory.ItemSlotChild[i].transform.SetAsFirstSibling();
@@ -148,8 +105,6 @@ public class ItemSlot : MonoBehaviour
                     Destroy(inventory.ItemSlotChild[i]);
                     inventory.ItemSlotChild[i] = null;
                 }
-                inventory.itemSlotNumber[i].text = "0";
-                inventory.itemSlotNumber[i].gameObject.SetActive(false);
             }
         }
     }

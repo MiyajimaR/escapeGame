@@ -8,7 +8,6 @@ public class Inventory : MonoBehaviour
 {
     [HideInInspector]public ItemData itemDataManager;
     public ItemSlot[] itemSlot = new ItemSlot[5];
-    public TextMeshProUGUI[] itemSlotNumber = new TextMeshProUGUI[5];
     [System.NonSerialized]public GameObject[] ItemSlotChild = new GameObject[5]; 
 
     //このクラスではなく、ItemZoomScriptで使用
@@ -40,50 +39,16 @@ public class Inventory : MonoBehaviour
                 itemSlot[i].nowItem = true;
                 ItemObj = itemDataManager.ItemDataList[GameManager.ItemManager[i]].ObjPrefab;
 
-                itemSlotNumber[i].text = GameManager.ItemQuantity[i].ToString();
-
-                if(GameManager.ItemQuantity[i] < 2)
-                {
-                    itemSlotNumber[i].gameObject.SetActive(false);
-                }
-
                 Transform parent = itemSlot[i].transform;
                 ItemSlotChild[i] = Instantiate(ItemObj,itemSlot[i].transform.position,Quaternion.identity,parent);
                 ItemSlotChild[i].transform.SetAsFirstSibling();
                 
-            }
-            else //何も持っていなくても数字をリセットしておく
-            {
-                itemSlotNumber[i].text = "0";
-                itemSlotNumber[i].gameObject.SetActive(false);
             }
         }
     }
 
     public void GetItem(int ItemID)
     {
-        for(int i = 0; i < 5; i++)
-        {
-            if(itemSlot[i].nowItem)
-            {
-                if(GameManager.ItemManager[i] == ItemID)
-                {
-                    GameManager.ItemQuantity[i] += 1;
-
-                    if(GameManager.ItemQuantity[i] > 1)
-                    {
-                        if(!itemSlotNumber[i].gameObject.activeSelf)
-                        {
-                            itemSlotNumber[i].gameObject.SetActive(true);
-                        }
-
-                        itemSlotNumber[i].text = GameManager.ItemQuantity[i].ToString();
-                    }
-                    
-                    return;
-                }
-            }
-        }
         for(int i = 0; i < 5; i++)
         {
             if(!itemSlot[i].nowItem)
@@ -97,16 +62,11 @@ public class Inventory : MonoBehaviour
                         ItemObj = itemDataManager.ItemDataList[ii].ObjPrefab;
                         ItemSprite = itemDataManager.ItemDataList[ii].itemSprite;
                         GameManager.ItemManager[i] = ItemID;
-                        GameManager.ItemQuantity[i] += 1;
-                        itemSlotNumber[i].gameObject.SetActive(false);
-              //          GameManager.GotItemManager[ItemID] = true;
 
                         //宴の表示
-
                         string UtageParam = itemDataManager.ItemDataList[ii].name;
                         advEngineController.UtageStringParam(UtageParam);
                         advEngineController.JumpScenario("GetItemWindow");
-                        
                         
                         break;
                     }
@@ -129,29 +89,12 @@ public class Inventory : MonoBehaviour
         {
             if(GameManager.ItemManager[i] == ItemID)
             {
-                GameManager.ItemQuantity[i] -= 1;
-
-                if(GameManager.ItemQuantity[i] == 0)
-                {
-                    itemSlot[i].nowItem = false;
-                    Destroy(ItemSlotChild[i]);
-                    ItemSlotChild[i] = null;
-                    GameManager.ItemManager[i] = -1;
+                itemSlot[i].nowItem = false;
+                Destroy(ItemSlotChild[i]);
+                ItemSlotChild[i] = null;
+                GameManager.ItemManager[i] = -1;
                 
-                    break;
-                }
-                else
-                {
-                    if(GameManager.ItemQuantity[i] < 2)
-                    {
-                        itemSlotNumber[i].gameObject.SetActive(false);
-                    }
-                    else
-                    {
-                        itemSlotNumber[i].text = GameManager.ItemQuantity[i].ToString();
-                    }
-                    break;
-                }
+                break;
             }
         }
     }
