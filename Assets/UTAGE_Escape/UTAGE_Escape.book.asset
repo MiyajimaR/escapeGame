@@ -179,13 +179,42 @@ MonoBehaviour:
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 16
+      debugIndex: 16
+      strings:
+      - '*DropArea4_Item1'
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 17
+      debugIndex: 17
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\u30DB\u30FC\u30B9\u3092\u5207\u308A\u88C2\u3044\u305F\uFF01\uFF01"
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 18
+      debugIndex: 18
+      strings:
+      - EndScenario
+      isEmpty: 0
+      isCommentOut: 0
+      debugInfo: 
+    - rowIndex: 19
       debugIndex: 48
       strings:
       - '*edu'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 17
+    - rowIndex: 20
       debugIndex: 49
       strings:
       - Jump
@@ -194,7 +223,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 18
+    - rowIndex: 21
       debugIndex: 50
       strings:
       - 
@@ -209,7 +238,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 19
+    - rowIndex: 22
       debugIndex: 51
       strings:
       - 
@@ -224,7 +253,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 20
+    - rowIndex: 23
       debugIndex: 52
       strings:
       - Jump
@@ -232,14 +261,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 21
+    - rowIndex: 24
       debugIndex: 53
       strings:
       - '*edu1Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 22
+    - rowIndex: 25
       debugIndex: 54
       strings:
       - 
@@ -254,14 +283,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 23
+    - rowIndex: 26
       debugIndex: 55
       strings:
       - '*edu2Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 24
+    - rowIndex: 27
       debugIndex: 56
       strings:
       - Selection
@@ -276,7 +305,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 25
+    - rowIndex: 28
       debugIndex: 57
       strings:
       - Selection
@@ -291,14 +320,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 26
+    - rowIndex: 29
       debugIndex: 59
       strings:
       - '*Escape1_Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 27
+    - rowIndex: 30
       debugIndex: 60
       strings:
       - 
@@ -313,7 +342,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 28
+    - rowIndex: 31
       debugIndex: 61
       strings:
       - Jump
@@ -321,14 +350,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 29
+    - rowIndex: 32
       debugIndex: 62
       strings:
       - '*Escape2_Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 30
+    - rowIndex: 33
       debugIndex: 63
       strings:
       - 
@@ -343,7 +372,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 31
+    - rowIndex: 34
       debugIndex: 64
       strings:
       - 
@@ -358,7 +387,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 32
+    - rowIndex: 35
       debugIndex: 65
       strings:
       - Jump
@@ -366,14 +395,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 33
+    - rowIndex: 36
       debugIndex: 66
       strings:
       - '*moti'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 34
+    - rowIndex: 37
       debugIndex: 67
       strings:
       - Jump
@@ -382,7 +411,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 35
+    - rowIndex: 38
       debugIndex: 68
       strings:
       - 
@@ -397,7 +426,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 36
+    - rowIndex: 39
       debugIndex: 69
       strings:
       - 
@@ -412,7 +441,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 37
+    - rowIndex: 40
       debugIndex: 70
       strings:
       - Jump
@@ -420,14 +449,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 38
+    - rowIndex: 41
       debugIndex: 71
       strings:
       - '*moti1Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 39
+    - rowIndex: 42
       debugIndex: 72
       strings:
       - 
@@ -442,14 +471,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 40
+    - rowIndex: 43
       debugIndex: 73
       strings:
       - '*moti2Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 41
+    - rowIndex: 44
       debugIndex: 74
       strings:
       - Selection
@@ -464,7 +493,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 42
+    - rowIndex: 45
       debugIndex: 75
       strings:
       - Selection
@@ -479,14 +508,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 43
+    - rowIndex: 46
       debugIndex: 76
       strings:
       - '*Escape3_Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 44
+    - rowIndex: 47
       debugIndex: 77
       strings:
       - 
@@ -502,7 +531,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 45
+    - rowIndex: 48
       debugIndex: 78
       strings:
       - Jump
@@ -510,14 +539,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 46
+    - rowIndex: 49
       debugIndex: 79
       strings:
       - '*Escape4_Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 47
+    - rowIndex: 50
       debugIndex: 80
       strings:
       - 
@@ -532,7 +561,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 48
+    - rowIndex: 51
       debugIndex: 81
       strings:
       - Jump
@@ -540,14 +569,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 49
+    - rowIndex: 52
       debugIndex: 82
       strings:
       - '*req'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 50
+    - rowIndex: 53
       debugIndex: 83
       strings:
       - Jump
@@ -556,7 +585,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 51
+    - rowIndex: 54
       debugIndex: 84
       strings:
       - 
@@ -571,7 +600,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 52
+    - rowIndex: 55
       debugIndex: 85
       strings:
       - Jump
@@ -579,14 +608,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 53
+    - rowIndex: 56
       debugIndex: 86
       strings:
       - '*req1Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 54
+    - rowIndex: 57
       debugIndex: 87
       strings:
       - 
@@ -601,14 +630,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 55
+    - rowIndex: 58
       debugIndex: 88
       strings:
       - '*req2Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 56
+    - rowIndex: 59
       debugIndex: 89
       strings:
       - Selection
@@ -623,7 +652,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 57
+    - rowIndex: 60
       debugIndex: 90
       strings:
       - Selection
@@ -638,14 +667,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 58
+    - rowIndex: 61
       debugIndex: 91
       strings:
       - '*Escape5_Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 59
+    - rowIndex: 62
       debugIndex: 92
       strings:
       - 
@@ -660,7 +689,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 60
+    - rowIndex: 63
       debugIndex: 93
       strings:
       - Jump
@@ -668,14 +697,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 61
+    - rowIndex: 64
       debugIndex: 94
       strings:
       - '*Escape6_Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 62
+    - rowIndex: 65
       debugIndex: 95
       strings:
       - 
@@ -690,7 +719,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 63
+    - rowIndex: 66
       debugIndex: 96
       strings:
       - Jump
@@ -698,14 +727,14 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 64
+    - rowIndex: 67
       debugIndex: 97
       strings:
       - '*task'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 65
+    - rowIndex: 68
       debugIndex: 98
       strings:
       - Jump
@@ -714,7 +743,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 66
+    - rowIndex: 69
       debugIndex: 101
       strings:
       - 
@@ -729,7 +758,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 67
+    - rowIndex: 70
       debugIndex: 102
       strings:
       - 
@@ -744,21 +773,21 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 68
+    - rowIndex: 71
       debugIndex: 103
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 69
+    - rowIndex: 72
       debugIndex: 104
       strings:
       - '*task1Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 70
+    - rowIndex: 73
       debugIndex: 105
       strings:
       - Jump
@@ -767,7 +796,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 71
+    - rowIndex: 74
       debugIndex: 106
       strings:
       - 
@@ -782,21 +811,21 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 72
+    - rowIndex: 75
       debugIndex: 107
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 73
+    - rowIndex: 76
       debugIndex: 108
       strings:
       - '*task2Jump'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 74
+    - rowIndex: 77
       debugIndex: 109
       strings:
       - 
@@ -811,21 +840,21 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 75
+    - rowIndex: 78
       debugIndex: 110
       strings:
       - EndScenario
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 76
+    - rowIndex: 79
       debugIndex: 111
       strings:
       - '*sendEmail'
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 77
+    - rowIndex: 80
       debugIndex: 112
       strings:
       - 
@@ -840,7 +869,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 78
+    - rowIndex: 81
       debugIndex: 113
       strings:
       - 
@@ -855,7 +884,7 @@ MonoBehaviour:
       isEmpty: 0
       isCommentOut: 0
       debugInfo: 
-    - rowIndex: 79
+    - rowIndex: 82
       debugIndex: 114
       strings:
       - EndScenario
@@ -864,174 +893,7 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/UTAGE_Escape/UTAGE_Escape.xls:Start
     type: 1
-    textLength: 1650
-    headerRow: 0
-    sourceAssetInEditor: {fileID: 0}
-    entityIndexTbl: 
-    entityDataList: []
-  - rows:
-    - rowIndex: 0
-      debugIndex: 0
-      strings:
-      - Command
-      - Arg1
-      - Arg2
-      - Arg3
-      - Arg4
-      - Arg5
-      - Arg6
-      - WaitType
-      - Text
-      - PageCtrl
-      - Voice
-      - WindowType
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 1
-      debugIndex: 1
-      strings:
-      - '*Detective_1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 2
-      debugIndex: 2
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u3088\u3046\u3002\u4FFA\u306F\u3057\u304C\u306A\u3044\u63A2\u5075......\u3001\u30C7\u30A3\u30C6\u30AF\u30C6\u30A3\u30D6\u4F50\u85E4\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 3
-      debugIndex: 3
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u541B\u306F\u3053\u3053\u3089\u3067\u8D77\u304D\u3066\u3044\u308B\u4E8B\u4EF6\u306B\u3064\u3044\u3066\u77E5\u3063\u3066\u3044\u308B\u304B\u306A\uFF1F"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
-      strings:
-      - Selection
-      - '*DetJump_1'
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u77E5\u3063\u3066\u308B\u3088\uFF01"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
-      strings:
-      - Selection
-      - '*DetJump_2'
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u77E5\u3089\u306A\u3044\u3088.....\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 6
-      debugIndex: 7
-      strings:
-      - '*DetJump_1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 7
-      debugIndex: 8
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u305D\u3046\u304B\u3002\u307E\u3042\u8A55\u5224\u3060\u3082\u3093\u306A\u3002<color=red>\u50AC\u7720\u8853\u5E2B</color>\u3068<color=red>\u5360\u3044\u5E2B</color>\u3068<color=red>\u5FC3\u7406\u5B66\u8005</color>\u304C\u88AB\u7591\u8005\u3067\u306A\u305C\u304B\u30B5\u30DC\u30C6\u30F3\u304C\u6B21\u3005\u3068\u76D7\u307E\u308C\u308B\u5909\u308F\u3063\u305F\u4E8B\u4EF6\u3060\u3082\u3093\u306A\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 8
-      debugIndex: 9
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 9
-      debugIndex: 10
-      strings:
-      - '*DetJump_2'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 10
-      debugIndex: 11
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u3048\u3048\uFF5E\u3002\u77E5\u3089\u306A\u3044\u306E\uFF5E\u3002\u3053\u3053\u3089\u8FBA\u4E00\u5E2F\u306E\u30B5\u30DC\u30C6\u30F3\u304C\u6B21\u3005\u3068\u76D7\u307E\u308C\u3066\u3044\u308B\u4E0D\u53EF\u89E3\u306A\u4E8B\u4EF6\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 11
-      debugIndex: 12
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u5BB9\u7591\u8005\u306F<color=red>\u50AC\u7720\u8853\u5E2B</color>\u3068<color=red>\u5360\u3044\u5E2B</color>\u3068<color=red>\u5FC3\u7406\u5B66\u8005</color>\u3068\u3044\u3046\u5168\u54E1\u304C\u602A\u3057\u3044\u4E8B\u4EF6\u3060\u305C\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 12
-      debugIndex: 13
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    name: Assets/UTAGE_Escape/UTAGE_Escape.xls:Detective
-    type: 1
-    textLength: 469
+    textLength: 1688
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}
     entityIndexTbl: 
@@ -1606,20 +1468,31 @@ MonoBehaviour:
       debugInfo: 
     - rowIndex: 16
       debugIndex: 16
-      strings: []
-      isEmpty: 1
+      strings:
+      - '*DropArea4_Item1'
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 17
       debugIndex: 17
-      strings: []
-      isEmpty: 1
+      strings:
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - 
+      - "\u30DB\u30FC\u30B9\u3092\u5207\u308A\u88C2\u3044\u305F\uFF01\uFF01"
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 18
       debugIndex: 18
-      strings: []
-      isEmpty: 1
+      strings:
+      - EndScenario
+      isEmpty: 0
       isCommentOut: 0
       debugInfo: 
     - rowIndex: 19
@@ -2500,177 +2373,6 @@ MonoBehaviour:
       debugInfo: 
     name: Assets/UTAGE_Escape/UTAGE_Escape.xls:Start
     type: 1
-    textLength: 1650
-    headerRow: 0
-    sourceAssetInEditor: {fileID: 0}
-  - rows:
-    - rowIndex: 0
-      debugIndex: 0
-      strings:
-      - Command
-      - Arg1
-      - Arg2
-      - Arg3
-      - Arg4
-      - Arg5
-      - Arg6
-      - WaitType
-      - Text
-      - PageCtrl
-      - Voice
-      - WindowType
-      - 
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 1
-      debugIndex: 1
-      strings:
-      - '*Detective_1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 2
-      debugIndex: 2
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u3088\u3046\u3002\u4FFA\u306F\u3057\u304C\u306A\u3044\u63A2\u5075......\u3001\u30C7\u30A3\u30C6\u30AF\u30C6\u30A3\u30D6\u4F50\u85E4\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 3
-      debugIndex: 3
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u541B\u306F\u3053\u3053\u3089\u3067\u8D77\u304D\u3066\u3044\u308B\u4E8B\u4EF6\u306B\u3064\u3044\u3066\u77E5\u3063\u3066\u3044\u308B\u304B\u306A\uFF1F"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 4
-      debugIndex: 4
-      strings:
-      - Selection
-      - '*DetJump_1'
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u77E5\u3063\u3066\u308B\u3088\uFF01"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 5
-      debugIndex: 5
-      strings:
-      - Selection
-      - '*DetJump_2'
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u77E5\u3089\u306A\u3044\u3088.....\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 6
-      debugIndex: 6
-      strings: []
-      isEmpty: 1
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 7
-      debugIndex: 7
-      strings:
-      - '*DetJump_1'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 8
-      debugIndex: 8
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u305D\u3046\u304B\u3002\u307E\u3042\u8A55\u5224\u3060\u3082\u3093\u306A\u3002<color=red>\u50AC\u7720\u8853\u5E2B</color>\u3068<color=red>\u5360\u3044\u5E2B</color>\u3068<color=red>\u5FC3\u7406\u5B66\u8005</color>\u304C\u88AB\u7591\u8005\u3067\u306A\u305C\u304B\u30B5\u30DC\u30C6\u30F3\u304C\u6B21\u3005\u3068\u76D7\u307E\u308C\u308B\u5909\u308F\u3063\u305F\u4E8B\u4EF6\u3060\u3082\u3093\u306A\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 9
-      debugIndex: 9
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 10
-      debugIndex: 10
-      strings:
-      - '*DetJump_2'
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 11
-      debugIndex: 11
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u3048\u3048\uFF5E\u3002\u77E5\u3089\u306A\u3044\u306E\uFF5E\u3002\u3053\u3053\u3089\u8FBA\u4E00\u5E2F\u306E\u30B5\u30DC\u30C6\u30F3\u304C\u6B21\u3005\u3068\u76D7\u307E\u308C\u3066\u3044\u308B\u4E0D\u53EF\u89E3\u306A\u4E8B\u4EF6\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 12
-      debugIndex: 12
-      strings:
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - 
-      - "\u5BB9\u7591\u8005\u306F<color=red>\u50AC\u7720\u8853\u5E2B</color>\u3068<color=red>\u5360\u3044\u5E2B</color>\u3068<color=red>\u5FC3\u7406\u5B66\u8005</color>\u3068\u3044\u3046\u5168\u54E1\u304C\u602A\u3057\u3044\u4E8B\u4EF6\u3060\u305C\u3002"
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    - rowIndex: 13
-      debugIndex: 13
-      strings:
-      - EndScenario
-      isEmpty: 0
-      isCommentOut: 0
-      debugInfo: 
-    name: Assets/UTAGE_Escape/UTAGE_Escape.xls:Detective
-    type: 1
-    textLength: 469
+    textLength: 1688
     headerRow: 0
     sourceAssetInEditor: {fileID: 0}

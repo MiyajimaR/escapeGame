@@ -15,7 +15,6 @@ public class DropArea1 : DropArea
         {
             gameObject.GetComponent<Image>().sprite = crashedMirror;
         }
-        
     }
 
     protected override void dropMethod(int DroppedItemID)

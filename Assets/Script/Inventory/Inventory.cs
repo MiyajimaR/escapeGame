@@ -49,6 +49,12 @@ public class Inventory : MonoBehaviour
 
     public void GetItem(int ItemID)
     {
+        if(GameManager.GotItemManager[ItemID])
+        {
+            Debug.Log("既に持っている");
+            return;
+        }
+        
         for(int i = 0; i < 5; i++)
         {
             if(!itemSlot[i].nowItem)

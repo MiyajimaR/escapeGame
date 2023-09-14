@@ -21,5 +21,20 @@ MonoBehaviour:
   - id: 1
     ObjPrefab: {fileID: 7707008213926338945, guid: a94ee418424599544a87200086202155, type: 3}
     name: "\u93E1\u306E\u7834\u7247"
-    itemSprite: {fileID: -2061636619, guid: 7c4ab55f5afd15c4ca7c914122784c0c, type: 3}
+    itemSprite: {fileID: 108738378, guid: 935d5206b2ec2914997baf82f828a812, type: 3}
     zoomObject: {fileID: 3458918088844028721, guid: dccec8b019da1b841bbb602010c0c5b0, type: 3}
+  - id: 2
+    ObjPrefab: {fileID: 91086031854924699, guid: be9a7348e6fb6d84dbbd489b796463a2, type: 3}
+    name: "\u30C8\u30A4\u30EC\u30C3\u30C8\u30DA\u30FC\u30D1\u30FC"
+    itemSprite: {fileID: 1069282293, guid: 0141b6488c664cc49a4c6d0b4095a2e5, type: 3}
+    zoomObject: {fileID: 2627436972305174267, guid: 09624146857989b45869c092fd682453, type: 3}
+  - id: 3
+    ObjPrefab: {fileID: 7055371304077955047, guid: 0d1014e2f46a2204cad9876723be69eb, type: 3}
+    name: "\u30B7\u30E3\u30EF\u30FC"
+    itemSprite: {fileID: 144121088, guid: 2a43882b457b95347af100682fffcb64, type: 3}
+    zoomObject: {fileID: 2954746135490863540, guid: afc705105fad85a4586e8c6ae2b4bb5f, type: 3}
+  - id: 4
+    ObjPrefab: {fileID: 6438996447877152011, guid: da34858d457bcfb46b0c0739174ff981, type: 3}
+    name: "\u68D2"
+    itemSprite: {fileID: -277698868, guid: e6e56961d3395b5419983311c74b89ed, type: 3}
+    zoomObject: {fileID: 6992081861693881287, guid: e8e67d7e215d2dc4899d1a3d58539694, type: 3}

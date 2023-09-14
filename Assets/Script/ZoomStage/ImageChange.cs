@@ -18,8 +18,12 @@ public class ImageChange : MonoBehaviour
 
     void Start()
     {
-        image = GetComponent<Image>();
-        DefaultSprite = image.sprite;
+        if(!lockSprite)
+        {
+            image = GetComponent<Image>();
+            DefaultSprite = image.sprite;
+        }
+        
 
         if(ItemIn)
         {
@@ -31,6 +35,8 @@ public class ImageChange : MonoBehaviour
     {
         if(lockSprite)
         {
+            image = GetComponent<Image>();
+
             if(image.sprite != ChangeSprite)
             {
                 image.sprite = ChangeSprite;

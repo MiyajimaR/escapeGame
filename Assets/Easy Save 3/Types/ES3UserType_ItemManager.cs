@@ -4,7 +4,7 @@ using UnityEngine;
 namespace ES3Types
 {
 	[UnityEngine.Scripting.Preserve]
-	[ES3PropertiesAttribute("Item0_inWater", "_mirrorIsCrashed")]
+	[ES3PropertiesAttribute("Item0_inWater", "_Item1_canGet", "_mirrorIsCrashed", "_showerIsCrashed", "_stickHook")]
 	public class ES3UserType_ItemManager : ES3ComponentType
 	{
 		public static ES3Type Instance = null;
@@ -17,7 +17,10 @@ namespace ES3Types
 			var instance = (ItemManager)obj;
 			
 			writer.WriteProperty("Item0_inWater", instance.Item0_inWater, ES3Type_bool.Instance);
+			writer.WritePrivateField("_Item1_canGet", instance);
 			writer.WritePrivateField("_mirrorIsCrashed", instance);
+			writer.WritePrivateField("_showerIsCrashed", instance);
+			writer.WritePrivateField("_stickHook", instance);
 		}
 
 		protected override void ReadComponent<T>(ES3Reader reader, object obj)
@@ -31,8 +34,17 @@ namespace ES3Types
 					case "Item0_inWater":
 						instance.Item0_inWater = reader.Read<System.Boolean>(ES3Type_bool.Instance);
 						break;
+					case "_Item1_canGet":
+					instance = (ItemManager)reader.SetPrivateField("_Item1_canGet", reader.Read<System.Boolean>(), instance);
+					break;
 					case "_mirrorIsCrashed":
 					instance = (ItemManager)reader.SetPrivateField("_mirrorIsCrashed", reader.Read<System.Boolean>(), instance);
+					break;
+					case "_showerIsCrashed":
+					instance = (ItemManager)reader.SetPrivateField("_showerIsCrashed", reader.Read<System.Boolean>(), instance);
+					break;
+					case "_stickHook":
+					instance = (ItemManager)reader.SetPrivateField("_stickHook", reader.Read<System.Boolean>(), instance);
 					break;
 					default:
 						reader.Skip();
