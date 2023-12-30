@@ -8,13 +8,7 @@ public class ItemSlot : DropArea
     [HideInInspector]public bool nowItem = false;
     public int SlotID;
 
-    private DropArea dropArea;
     [SerializeField]private Inventory inventory;
-
-    private void Start()
-    {
-        dropArea = GetComponent<DropArea>();
-    }
 
     protected override void dropMethod(int droppedItemID)
     {
@@ -64,7 +58,7 @@ public class ItemSlot : DropArea
     {
         for(int i = 0; i < 5; i++)
         {
-            if(inventory.itemSlot[i].transform.childCount > 2)
+            if(inventory.itemSlot[i].transform.childCount > 1)
             {
                 Debug.Log("ItemSlotにてアイテム重複を消すため初期化しました");
                 DoInit();

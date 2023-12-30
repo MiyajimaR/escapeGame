@@ -25,37 +25,32 @@ public class transition : MonoBehaviour
     }
     public void xTransitionButton(int horizontal)
     {
-      //  bool can = FlickIntBool();
-     //   if(!can)    return;
+        if(nowShake) return;
 
         int xTransition = horizontal * Hol;
         float yVec = transform.localPosition.y;
         transform.localPosition = new Vector2(xTransition,yVec);
-        if(!nowShake)
-            nowTransition();
+        nowTransition();
     }
     public void yTransitionButton(int vertical)
     {
-     //   bool can = FlickIntBool();
-    //    if(!can)    return;
+        if(nowShake) return;
 
         int yTransition = vertical * Ver;
         float xVec = transform.localPosition.x;
         transform.localPosition = new Vector2(xVec,yTransition);
-        if(!nowShake)
-            nowTransition();
+        nowTransition();
     }
     public void TransitionButton(Vector2 toVec)
     {
         bool can = FlickIntBool();
-        if(!can)    return;
+        if(!can || nowShake)    return;
 
         float vecX = toVec.x * Hol;
         float vecY = toVec.y * Ver;
         transform.localPosition = new Vector2(vecX,vecY);
 
-        if(!nowShake)
-            nowTransition();
+        nowTransition();
     }
 
     private IEnumerator cannotMove(int dir) //1,right   2, left   3,up   4,down

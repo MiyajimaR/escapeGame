@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//棒
+
 public class DropArea5 : DropArea
 {
     protected override void dropMethod(int DroppedItemID)
@@ -11,6 +13,8 @@ public class DropArea5 : DropArea
             case 3:
                 invent.UseItem(3);
                 itemManager.stickHook = true;
+                initItemGetButton init = gameObject.GetComponent<initItemGetButton>();
+                init.canGet = true;
                 break;
         }
     }
@@ -19,7 +23,7 @@ public class DropArea5 : DropArea
     {
         if(itemManager.stickHook)
         {
-            invent.GetItem(4);
+            itemManager.stickHook = false;
         }
         else
         {

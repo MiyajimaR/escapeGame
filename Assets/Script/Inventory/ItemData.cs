@@ -17,6 +17,7 @@ public class itemData
     public GameObject ObjPrefab;
     public string name;
     public Sprite itemSprite;
+    public Vector2 getScale;
     public GameObject zoomObject;
 }
 

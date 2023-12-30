@@ -4,7 +4,7 @@ using UnityEngine;
 namespace ES3Types
 {
 	[UnityEngine.Scripting.Preserve]
-	[ES3PropertiesAttribute("Item0_inWater", "_Item1_canGet", "_mirrorIsCrashed", "_showerIsCrashed", "_stickHook")]
+	[ES3PropertiesAttribute("Item0_inWater", "_Item1_canGet", "_mirrorIsCrashed", "_showerIsCrashed", "_stickHook", "_DropArea6_DoorIsCrashed")]
 	public class ES3UserType_ItemManager : ES3ComponentType
 	{
 		public static ES3Type Instance = null;
@@ -21,6 +21,7 @@ namespace ES3Types
 			writer.WritePrivateField("_mirrorIsCrashed", instance);
 			writer.WritePrivateField("_showerIsCrashed", instance);
 			writer.WritePrivateField("_stickHook", instance);
+			writer.WritePrivateField("_DropArea6_DoorIsCrashed", instance);
 		}
 
 		protected override void ReadComponent<T>(ES3Reader reader, object obj)
@@ -45,6 +46,9 @@ namespace ES3Types
 					break;
 					case "_stickHook":
 					instance = (ItemManager)reader.SetPrivateField("_stickHook", reader.Read<System.Boolean>(), instance);
+					break;
+					case "_DropArea6_DoorIsCrashed":
+					instance = (ItemManager)reader.SetPrivateField("_DropArea6_DoorIsCrashed", reader.Read<System.Boolean>(), instance);
 					break;
 					default:
 						reader.Skip();

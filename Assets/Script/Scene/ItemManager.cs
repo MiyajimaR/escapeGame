@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using Utage;
 //using Microsoft.Unity.VisualStudio.Editor;
 
 public class ItemManager : MonoBehaviour
 {
+   [SerializeField]private transition traObj;
    [SerializeField]private GameObject mirror;
    [SerializeField]private Sprite toiletPaper;
    [SerializeField]private Image toiletPaperImage;
@@ -15,6 +17,8 @@ public class ItemManager : MonoBehaviour
    [SerializeField]private GameObject showerPanel;
    [SerializeField]private GameObject showerObj;
    [SerializeField]private GameObject showerHook;
+   [SerializeField]private GameObject toiletDoor;
+   [SerializeField]private Sprite toiletDoorSprite;
 
 
 
@@ -23,7 +27,7 @@ public class ItemManager : MonoBehaviour
    private bool _mirrorIsCrashed = false;
    private bool _showerIsCrashed = false;
    private bool _stickHook = false;
-
+   private bool _DropArea6_DoorIsCrashed = false;
 
 
    public bool mirrorIsCrashed
@@ -74,10 +78,32 @@ public class ItemManager : MonoBehaviour
       get{return _stickHook;}
       set
       {
+         _stickHook = value;
          if(value)
          {
-            _stickHook = value;
             showerHook.SetActive(true);
+         }
+         else
+         {
+            showerHook.SetActive(false);
+         }
+      }
+   }
+      //トイレのドア
+   public bool DropArea6_DoorIsCrashed
+   {
+      get{return _DropArea6_DoorIsCrashed;}
+      set
+      {
+         if(value)
+         {
+            _DropArea6_DoorIsCrashed = value;
+            DropArea6 D6 = toiletDoor.GetComponent<DropArea6>();
+            Image toiletDoorImage = toiletDoor.GetComponent<Image>();
+            Button toiletDoorButton = toiletDoor.GetComponent<Button>();
+            toiletDoorImage.sprite = toiletDoorSprite;
+            toiletDoorButton.onClick.RemoveAllListeners();
+            toiletDoorButton.onClick.AddListener(D6.notCrashed);
          }
       }
    }
@@ -113,6 +139,17 @@ public class ItemManager : MonoBehaviour
       if(stickHook)
       {
          showerHook.SetActive(true);
+      }
+
+      //トイレのドアが壊れている
+      if(DropArea6_DoorIsCrashed)
+      {
+            traObj = traObj.GetComponent<transition>();
+            Image toiletDoorImage = toiletDoor.GetComponent<Image>();
+            Button toiletDoorButton = toiletDoor.GetComponent<Button>();
+            toiletDoorImage.sprite = toiletDoorSprite;
+            toiletDoorButton.onClick.RemoveAllListeners();
+            toiletDoorButton.onClick.AddListener(() => traObj.xTransitionButton(1));
       }
    }
 }

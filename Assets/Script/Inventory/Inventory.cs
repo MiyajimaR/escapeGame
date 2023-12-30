@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Utage;
 
 public class Inventory : MonoBehaviour
 {
@@ -23,11 +24,13 @@ public class Inventory : MonoBehaviour
 
     public int ItemZoomScriptNumber = -1;
     private RectTransform rect;
+    private RectTransform ItemImageScale;
 
     void Start()
     {
         
         ItemImage = ItemImage.GetComponent<Image>();
+        ItemImageScale = ItemImage.GetComponent<RectTransform>();
         ItemZoomChild = ItemZoomPanel.transform.GetChild(1).gameObject;
         rect = ItemZoomChild.GetComponent<RectTransform>();
 
@@ -42,7 +45,6 @@ public class Inventory : MonoBehaviour
                 Transform parent = itemSlot[i].transform;
                 ItemSlotChild[i] = Instantiate(ItemObj,itemSlot[i].transform.position,Quaternion.identity,parent);
                 ItemSlotChild[i].transform.SetAsFirstSibling();
-                
             }
         }
     }
@@ -51,7 +53,6 @@ public class Inventory : MonoBehaviour
     {
         if(GameManager.GotItemManager[ItemID])
         {
-            Debug.Log("既に持っている");
             return;
         }
         
@@ -73,6 +74,9 @@ public class Inventory : MonoBehaviour
                         string UtageParam = itemDataManager.ItemDataList[ii].name;
                         advEngineController.UtageStringParam(UtageParam);
                         advEngineController.JumpScenario("GetItemWindow");
+
+                        //ゲット時のパネル（イメージ）の大きさの編集
+                        ItemImageScale.sizeDelta = itemDataManager.ItemDataList[ii].getScale;
                         
                         break;
                     }
